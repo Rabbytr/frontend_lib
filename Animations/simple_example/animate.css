@@ -1,0 +1,28 @@
+body{
+    background-color: #cfc;
+}
+
+section {
+  flex: 1 1 25%;
+  margin-top: 80px;
+}
+
+.sk-rotating-plane {
+  width: 6em;
+  height: 6em;
+  margin: auto;
+  background-color: #ef498b;
+  animation: sk-rotating-plane 1.2s infinite ease-in-out;
+}
+
+@keyframes sk-rotating-plane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}

@@ -6,11 +6,42 @@
   <script>
   $(document).ready(function(){
     console.log('fsddsfsdaf');
-    mouseword($('body'),['我','是','你','爸爸']);
+    mouseword($('body'));
+
+    function animater() {
+      $('.spinner').animate({width: '+=10px'}, 500, function(){
+        $('.spinner').animate({width: '+=10px'}, 500, function(){
+          $('.spinner').animate({width: '+=10px'}, 500, function(){
+            animater();
+          });
+        });
+      });
+    }
+    //animater();
   });
+
+
+
+  window.onload = function(){
+    //页面加载完毕后淡出
+    $('#status').fadeOut();
+    $('#preloader').delay(450).fadeOut('slow');
+  };
   </script>
+
+  <style media="screen">
+  body{
+    background-color: #cfc;
+  }
+  .spinner{
+    width: 10px;
+    height: 20px;
+    background-color: #f00;
+  }
+</style>
 </head>
 <body>
   <h1>index</h1>
+  <div class="spinner"></div>
 </body>
 </html>
