@@ -1,2 +1,2 @@
 # javascript_lib
-There are some my js library
+There are some my html/js/css library
