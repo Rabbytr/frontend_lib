@@ -1,0 +1,28 @@
+/* Blue button */
+.btn-blue{
+  display: inline-block;
+  padding: 0 16px;
+  font-size: 14px;
+  line-height: 32px;
+  background-color: #0084ff;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 4px;
+  outline:none;
+  transition: background 0.3s linear;
+}
+.btn-blue:active,
+.btn-blue:hover{
+  display: inline-block;
+  padding: 0 16px;
+  font-size: 14px;
+  line-height: 32px;
+  color: #0084ff;
+  text-align: center;
+  cursor: pointer;
+  background: none;
+  border: 1px solid;
+  border-radius: 4px;
+}
